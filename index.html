@@ -45,54 +45,48 @@
 			<section>
 				<h2>What is a Cluster?</h2>
 				<ul>
-					<li></li>
-					<li>SFTP or SCP for transferring files</li>
-					<li>Credentials (Account Info)</li>
+					<li>A collection of computers working towards on a task.</li>
+					<li>Our cluster</li>
 					<ul>
-						<li>User: workshop(1-32)</li>
-						<li>Password: IIGBworkshop12</li>
-						<li>Host: workshop.bioinfo.ucr.edu</li>
+						<li>512 CPU Cores</li>
+						<li>1888 GB (1.84TB) of RAM</li>
+						<li>37 Compute nodes</li>
+						<li>Numerous supporting systems</li>
 					</ul>
 				</ul>
 			</section>
 
-				<section>
-					<h2>SSH (Mac)</h2>
+			<section>
+				<h2>Submitting Jobs</h2>
+				<ul>
+					<li>qsub</li>
+					<li>Scripts</li>
+					<li>Array Jobs</li>
 					<ul>
-						<li>SSH support built in</li>
-						<li>Terminal</li>
-						<ul>
-							<li>Found in Applications &gt; Utilities</li>
-						</ul>
-						<li>iTerm 2</li>
-						<li>Run 'ssh &lt;username&gt;@&lt;host&gt;'</li>
+						<li>PBS_ARRAYID</li>
 					</ul>
-				</section>
+				</ul>
+			</section>
 
-				<section>
-					<h2>SSH (Windows)</h2>
-					<ul>
-						<li>PuTTY</li>
-						<li>Connection &gt; SSH</li>
-						<ul>
-							<li>Fill Host field</li>
-							<li>PuTTY will prompt for username and password</li>
-							<li>Optionally, save the session</li>
-						</ul>
-					</ul>
-				</section>
+			<section>
+				<h2>Viewing the Queue</h2>
+				<ul>
+					<li>qstat</li>
+					<li>qstatMonitor/li>
+					<li>qstat -t</li>
+					<li>see n</li>
+				</ul>
+			</section>
 
-				<section style="top: -20px;">
-					<h1>Demo</h1>
-				</section>
-
-				<section style="top: -20px;">
-					<h2>SCP/SFTP (Mac)</h2>
-					<ul>
-						<li>Fugu</li>
-						<li>"Connect to:" is where the host goes.</li>
-					</ul>
-				</section>
+			<section style="Getting Help">
+				<h2>Getting Help</h2>
+				<ul>
+					<li><a href="mailto:support@biocluster.ucr.edu">support@biocluster.ucr.edu</a></li>
+					<li>My office: Genomics 1207E</li>
+					<li>Man pages</li>
+					<li>Google</li>
+				</ul>
+			</section>
 
 				<section style="top: -20px;">
 					<h2>SCP/SFTP (Windows)</h2>
@@ -103,150 +97,9 @@
 					</ul>
 				</section>
 
-				<section style="top: -20px;">
+				<section>
 					<h1>Demo</h1>
 				</section>
-
-			<!-- Using Linux -->
-			<section style="top: 0px; display: block;" class="future stack">
-				<section style="top: -20px;">
-					<h2>Using Linux</h2>
-					<ul>
-						<li>Linux is case sensitive</li>
-						<li>Avoid spaces in names</li>
-						<li>Current Working Directory</li>
-					</ul>
-				</section>
-
-				<section style="top: -20px;">
-					<h2>Getting Around</h2>
-					<ul>
-						<li>Where am I now? (pwd)</li>
-						<li>What is here? (ls)</li>
-						<ul>
-							<li>What is here with details? (ls -l)</li>
-							<li>What is hidden? (ls -a)</li>
-						</ul>
-						<li>How big is it? (ls -h and du -sh)</li>
-						<li>How do I make a directory (mkdir)</li>
-					</ul>
-				</section>
-
-				<section style="top: -20px;">
-					<h2>Getting Around Cont.</h2>
-					<ul>
-						<li>How do I get places? (cd)</li>
-						<ul>
-							<li>Special Locations</li>
-							<ul>
-								<li>~ - Home</li>
-								<li>.. - Up one directory</li>
-								<li>. - This directory</li>
-							</ul>
-						</ul>
-						<li>Relative vs. Full Path</li>
-					</ul>
-				</section>
-
-				<section style="top: -20px;">
-					<h1>Demo</h1>
-				</section>
-
-				<section style="top: -20px;">
-					<h2>Moving Things Around</h2>
-					<ul>
-						<li>Copy just files (cp)</li>
-						<li>Copy files AND directories (cp -R)</li>
-						<li>Moving things (mv)</li>
-						<li>Copying a lot of things (rsync)</li>
-					</ul>
-				</section>
-
-				<section style="top: -20px;">
-					<h2>Other Useful Commands</h2>
-					<ul>
-						<li>Up/Down Keys</li>
-						<li>Tab completion</li>
-						<li>History search (CTRL+r)</li>
-						<li>grep</li>
-						<ul>
-							<li>-i flag (case insensitive)</li>
-							<li>-v flag (exclude)</li>
-							<li>--count</li>
-						</ul>
-						<li>top (or htop)</li>
-					</ul>
-				</section>
-
-				<section style="top: -20px;">
-					<h2>Other Useful Commands Cont.</h2>
-					<ul>
-						<li>ps (-ef)</li>
-						<li>wc</li>
-						<li>wget</li>
-						<li>less</li>
-						<li>tar -xzf</li>
-						<li>gunzip</li>
-						<li>man</li>
-					</ul>
-				</section>
-
-				<section style="top: -20px;">
-					<h1>Demo</h1>
-				</section>
-
-				<section style="top: -20px;">
-					<h2>Text Editors</h2>
-					<ul>
-						<li>nano (Simple, basic. We'll be using this)</li>
-						<li>vim (One of the standard editors, advanced)</li>
-						<li>emacs (Another standard, also advanced)</li>
-					</ul>
-				</section>
-
-				<section style="top: -20px;">
-					<h1>Demo</h1>
-				</section>
-
-				<section style="top: -20px;">
-					<h2>Pipes and Redirects</h2>
-					<ul>
-						<li>Change where output goes</li>
-						<li>Change where input comes from</li>
-						<li>Combine simpler commands to form complex tasks</li>
-						<li>Pipe (|)</li>
-						<li>Redirect (&gt;)</li>
-						<li>Redirect and append (&gt;&gt;)</li>
-						<li>Input from file (&lt;)</li>
-					</ul>
-				</section>
-				
-				<section style="top: -20px;">
-					<h1>Demo</h1>
-				</section>
-			</section>
-
-			<!-- End matter -->
-			<section style="top: 0px; display: block;" class="future stack">
-				<section style="top: -20px;">
-					<h2>Getting Help</h2>
-					<ul>
-						<li>man and --help/-h</li>
-						<li><a href="mailto:support@biocluster.ucr.edu" class="roll"><span data-title="support@biocluster.ucr.edu">support@biocluster.ucr.edu</span></a></li>
-						<li>Google</li>
-						<li>Online Forums</li>
-						<li>Mailing lists</li>
-					</ul>
-				</section>
-
-				<section style="top: -20px;">
-					<h2>Exersises</h2>
-					<p><a href="http://manuals.bioinformatics.ucr.edu/home/linux-basics#TOC-Exercises&quot;" class="roll"><span data-title="http://manuals.bioinformatics.ucr.edu/home/linux-basics#TOC-Exercises">http://manuals.bioinformatics.ucr.edu/home/linux-basics#TOC-Exercises</span></a></p>
-				</section>
-			</section>
-			</div>
-
-		<div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" style="display: block;"><div class="navigate-left"></div><div class="navigate-right enabled"></div><div class="navigate-up"></div><div class="navigate-down enabled"></div></aside><div class="state-background"></div><div class="pause-overlay"></div></div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
